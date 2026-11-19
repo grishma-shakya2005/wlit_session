@@ -1,22 +1,19 @@
 //DOM Manipulation
-// updating Elements
 
-const title = document.querySelector("#heading");
-// console.log(title);
+//Creating elements
+const ul = document.querySelector("ul");
+console.log(ul);
+const li = document.createElement("li");
+console.log(li);
 
-title.style.color = "red";
-title.textContent = "Things WE like to do";
-// console.log(title);
 
-const items = document.querySelectorAll(".item-list");
-console.log(items);
+//Appending elements
+ul.append(li);
 
-// for (let i = 0; i < items.length; i++) {
-//    items[i].style.fontWeight = "bold";
-//     // items[i].style.color = "red";
-// }
 
-//approach 2
-items.forEach((item) => {
-    item.style.fontweight = "bold";
-})
+//Modifying Texts
+li.innerHTML = "Texting";
+
+li.setAttribute("id", "heading");
+
+li.remove();
