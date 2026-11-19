@@ -17,3 +17,4 @@ li.innerHTML = "Texting";
 li.setAttribute("id", "heading");
 
 li.remove();
+
